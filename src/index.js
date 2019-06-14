@@ -8,7 +8,7 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-mongoose.connect('acessar o mongo atlas e criar cluster, adicionar um novo usuario e liberar acesso na rede', {
+mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-11ops.mongodb.net/test?retryWrites=true&w=majority', {
     useNewUrlParser: true,
 });
 
