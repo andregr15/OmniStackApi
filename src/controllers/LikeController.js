@@ -8,6 +8,9 @@ module.exports = {
 
         await post.save();
         
+        // send to client a socket message
+        req.io.emit('like', post);
+
         return res.json(post);
     }
 };

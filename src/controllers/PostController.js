@@ -34,6 +34,9 @@ module.exports = {
            image: fileName, 
         });
 
+        // send to client a socket message
+        req.io.emit('post', post);
+
         return res.json(post);
     },
 };
