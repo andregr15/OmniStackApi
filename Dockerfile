@@ -12,6 +12,6 @@ RUN yarn install
 
 USER node
 
-EXPOSE 8000
+EXPOSE 3333
 
-CMD ["node", "app.js"]
+CMD ["yarn", "dev"]
